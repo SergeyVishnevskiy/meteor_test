@@ -1,0 +1,25 @@
+<body>
+  <h1>Welcome to My Meteor App</h1>
+
+  <!-- Компоненти для реєстрації та логіну (з `accounts-ui`) -->
+  {{> loginButtons}} <!-- Це вбудовані кнопки для логіну/реєстрації -->
+
+  <!-- Привітання користувача -->
+  <p id="userGreeting"></p>
+
+  <!-- Форма для додавання даних -->
+  <form id="postForm">
+    <input type="text" id="postData" placeholder="Enter data to save" required>
+    <button type="submit">Save Data</button>
+  </form>
+
+  <!-- Кнопки для Find та Reset -->
+  <button id="findBtn">Find Data</button>
+  <button id="resetBtn">Reset Data</button>
+
+  <!-- Логін/Логаут -->
+  <button id="logoutBtn">Logout</button>
+
+  <!-- Один блок для всіх сповіщень та результатів -->
+  <div id="output"></div>
+</body>
